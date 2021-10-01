@@ -48,3 +48,5 @@ CREATE TABLE Salaries (
     salary INTEGER,
     FOREIGN KEY (emp_no) REFERENCES Employees(emp_no)
 );
+
+-- Once tables were created, the data was imported by right clicking the table and the 'import/export' option was chosen.
