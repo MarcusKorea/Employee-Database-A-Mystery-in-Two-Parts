@@ -92,6 +92,9 @@ Evidence in hand, you march into your boss's office and present the visualisatio
 ## **Salry VS Job**
 ![Salry VS Job](Screenshots/Salry_vs_Job.png)
 
+## Employee Table
+![Employee Table](Screenshots/Table.png)
+
 
 
 ## **Running all the code**
