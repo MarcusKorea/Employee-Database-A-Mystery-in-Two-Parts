@@ -1,4 +1,4 @@
-# SQL Homework - Employee Database: A Mystery in Two Parts
+# Employee Database: A Mystery in Two Parts
 
 ![sql.png](sql.png)
 
@@ -8,11 +8,10 @@ It is a beautiful spring day, and it is two weeks since you have been hired as a
 
 In this assignment, you will design the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, you will perform:
 
-1. Data Engineering
+1. Data Engineering/ Data Modelling
 
-3. Data Analysis
+2. Data Analysis
 
-Note: You may hear the term "Data Modelling" in place of "Data Engineering," but they are the same terms. Data Engineering is the more modern wording instead of Data Modelling.
 
 ## Instructions
 
@@ -49,21 +48,11 @@ Once you have a complete database, do the following:
 
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
-## Bonus (Optional)
+## Bonus
 
 As you examine the data, you are overcome with a creeping suspicion that the dataset is fake. You surmise that your boss handed you spurious data in order to test the data engineering skills of a new employee. To confirm your hunch, you decide to take the following steps to generate a visualisation of the data, with which you will confront your boss:
 
-1. Import the SQL database into Pandas. (Yes, you could read the CSVs directly in Pandas, but you are, after all, trying to prove your technical mettle.) This step may require some research. Feel free to use the code below to get started. Be sure to make any necessary modifications for your username, password, host, port, and database name:
-
-   ```sql
-   from sqlalchemy import create_engine
-   engine = create_engine('postgresql://localhost:5432/<your_db_name>')
-   connection = engine.connect()
-   ```
-
-* Consult [SQLAlchemy documentation](https://docs.sqlalchemy.org/en/latest/core/engines.html#postgresql) for more information.
-
-* If using a password, do not upload your password to your GitHub repository. See [https://www.youtube.com/watch?v=2uaTPmNvH0I](https://www.youtube.com/watch?v=2uaTPmNvH0I) and [https://help.github.com/en/github/using-git/ignoring-files](https://help.github.com/en/github/using-git/ignoring-files) for more information.
+1. Import the SQL database into Pandas.
 
 2. Create a histogram to visualise the most common salary ranges for employees.
 
@@ -76,3 +65,57 @@ Evidence in hand, you march into your boss's office and present the visualisatio
 ### Copyright
 
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+## **Summary**:
+
+## **Languages used**:
+- SQL
+- Python
+  
+## **Database used**:
+- PostgreSQL
+
+## **Python Packages Used**:
+- Pandas
+- SQLAlchemy
+- Matplotlib
+  
+
+
+## **Screenshots**
+## **Entity Relationship Diagram**
+![ERD](EmployeeSQL/ERD_Diagram.png)
+
+## **Salary Counts**
+![Salary Counts](Screenshots/Salary_counts.png)
+
+## **Salry VS Job**
+![Salry VS Job](Screenshots/Salry_vs_Job.png)
+
+
+
+## **Running all the code**
+## Creating the Database
+1. In PgAdmin create a new database
+2. Right click on the database you created and select *Query Tool*. Copy and paste the contents from *Schema.sql*. Press run.
+3. Right click on the table you want to enter data for, and the click *Import/Export* and enter the corressponding csv file.
+4. Open up another query tool and copy and paste the contents from *queries.sql*.
+5. Press run.
+
+## **Running the jupyter notebooks**
+1. Before running any of the jupyter notebooks please install needed packages running the following code in the terminal.
+         
+        pip install pandas
+        pip install sqlalchemy
+        pip install matplotlib
+
+Or run this code in the first Jupyter Notebook
+
+        ! pip install --user pandas
+        ! pip install --user sqlalchemy
+        ! pip install --user matplotlib.pyplot
+
+1. Enter your PGAdmin password and database name in *config.py* and then save.
+
+
+2. Run the file *Bonus.ipynb* 

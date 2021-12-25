@@ -1,6 +1,6 @@
 ﻿-- Drop tables for when rerunning the code
-DROP TABLE Salaries;
-DROP TABLE Dept_mans;
+DROP TABLE IF EXISTS Salaries;
+DROP TABLE IF EXISTS Dept_mans;
 DROP TABLE IF EXISTS Dept_emps;
 DROP TABLE IF EXISTS Employees;
 DROP TABLE IF EXISTS Titles;
